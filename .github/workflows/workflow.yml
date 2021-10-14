@@ -28,7 +28,9 @@ jobs:
           echo "${{ env.action_state }}" # This will output 'yellow'
 
       - name: Install
-        run: npm install
+        run: |
+          npm install
+          echo "url: ${{env.REACT_APP_URL}}"
         env:
           REACT_APP_URL: ${{secrets.REACT_APP_URL}}
 
