@@ -30,7 +30,7 @@ jobs:
       - name: Install
         run: npm install
         env:
-          REACT_APP_URL: ${{secrets.REACT_APP_URL}}
+          REACT_APP_URL: ${{secrets.REACT_APP_UR}}
 
       - name: Build
         run: CI='' npm run build
