@@ -20,7 +20,7 @@ jobs:
       - name: Store variables
         run: |
         touch .env
-          echo "REACT_APP_URL=${{ secrets.REACT_APP_URL }}" >> .env
+        echo "REACT_APP_URL=${{ secrets.REACT_APP_URL }}" >> .env
 
       - name: Install
         run: npm install
