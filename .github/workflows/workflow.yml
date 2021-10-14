@@ -21,6 +21,16 @@ jobs:
         if: ${{startsWith( secrets.REACT_APP_URL, 'http' )}}
         run: echo "env exists ${{github.ref}}"
 
+      - name: Set the value
+        id: step_one
+        run: |
+          echo "action_state=yellow" >> $GITHUB_ENV
+
+      - name: Use the value
+        id: step_two
+        run: |
+          echo "${{ env.action_state }}" # This will output 'yellow'
+
       - name: Install
         run: npm install
         env:
