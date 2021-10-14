@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Check env variable
-        if: ${{ contains(env.REACT_APP_URL, 'http' }}
+        if: ${{ contains(env.REACT_APP_URL, http }})
         run: echo "env exists ${{env.REACT_APP_URL}}"
 
       - name: Install
