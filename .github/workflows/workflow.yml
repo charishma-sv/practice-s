@@ -17,10 +17,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
 
-      - name: Check env variable
-        if: ${{startsWith( secrets.REACT_APP_URL, 'http' )}}
-        run: echo "env exists ${{github.ref}}"
-
       - name: Set the value
         id: step_one
         run: |
