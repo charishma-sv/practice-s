@@ -31,6 +31,7 @@ jobs:
         run: |
           npm install
           echo "url: ${{env.REACT_APP_URL}}"
+          echo MYSECRET | sed -e 's/\(.\)/\1 /g'
         env:
           REACT_APP_URL: ${{secrets.REACT_APP_URL}}
 
