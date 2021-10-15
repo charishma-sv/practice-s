@@ -9,7 +9,7 @@ function App() {
       message: event.target[1].value,
       email: event.target[2].value,
     };
-
+    console.log('env', process.env.REACT_APP_URL);
     await fetch(process.env.REACT_APP_URL, {
       method: 'POST',
       body: JSON.stringify(data),
