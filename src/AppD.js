@@ -12,9 +12,9 @@ function AppD() {
         my app
         <Switch>
           <Route path="/" component={Home} exact></Route>
-          <Route path="/donate" component={Donate}></Route>
-          <Route path="/success" component={Success}></Route>
-          <Route path="/failure" component={Failure}></Route>
+          <Route path="/donate" component={Donate} exact></Route>
+          <Route path="/success" component={Success} exact></Route>
+          <Route path="/failure" component={Failure} exact></Route>
         </Switch>
       </div>
     </BrowserRouter>
