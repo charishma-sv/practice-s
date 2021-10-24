@@ -7,7 +7,7 @@ import Success from './components/Success';
 
 function AppD() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/practice-s'>
       <div>
         my app
         <Switch>
