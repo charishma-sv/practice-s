@@ -7,14 +7,14 @@ import Success from './components/Success';
 
 function AppD() {
   return (
-    <BrowserRouter basename='/practice-s'>
+    <BrowserRouter basename="/practice-s">
       <div>
         my app
         <Switch>
           <Route path="/" component={Home} exact></Route>
           <Route path="/donate" component={Donate} exact></Route>
-          <Route path="/success" component={Success} exact></Route>
-          <Route path="/failure" component={Failure} exact></Route>
+          <Route path="/?/success" component={Success} exact></Route>
+          <Route path="/?/failure" component={Failure} exact></Route>
         </Switch>
       </div>
     </BrowserRouter>
